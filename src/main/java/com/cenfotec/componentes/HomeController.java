@@ -84,16 +84,5 @@ public class HomeController {
         model.addAttribute("lista",datos);
         return "nueva"; //es el nombre de la vista
     }
-	public static int diasEntreDosFechas(){
 
-
-		//24-May-2017, change this to your desired Start Date
-		LocalDate dateBefore = LocalDate.of(2023, Month.JANUARY, 1);
-		//29-July-2017, change this to your desired End Date
-		LocalDate dateAfter = LocalDate.of(LocalDate.now().getYear(), LocalDate.now().getMonth(), LocalDate.now().getDayOfMonth());
-		long noOfDaysBetween = ChronoUnit.DAYS.between(dateBefore, dateAfter);
-		System.out.println(noOfDaysBetween);
-
-		return (int)noOfDaysBetween;
-	}
 }
